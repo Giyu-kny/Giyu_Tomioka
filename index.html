@@ -193,7 +193,23 @@
             </form>
         </div>
     </section>
+    <div style="text-align: center; margin: 20px;">
+  <button onclick="playMusic()" style="padding: 10px; background: #001f3f; color: white; border: 2px solid #0074D9; cursor: pointer;">
+    🔊 Play Giyu's Theme
+  </button>
+  
+  <audio id="portalMusic">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
+  <script>
+    function playMusic() {
+      var audio = document.getElementById("portalMusic");
+      audio.play();
+    }
+  </script>
+</div>
     <footer>&copy; 2026 HOT_BOY_INFINETE | THE LEGENDARY HKS EMPIRE</footer>
 
 </body>
